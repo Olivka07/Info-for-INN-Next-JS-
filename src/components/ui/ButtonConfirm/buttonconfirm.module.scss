@@ -1,0 +1,7 @@
+.btn {
+  color: var(--confirm-primary-color);
+
+  &:hover {
+    color: var(--confirm-secondary-color);
+  }
+}

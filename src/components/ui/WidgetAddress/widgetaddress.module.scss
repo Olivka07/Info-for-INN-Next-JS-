@@ -1,0 +1,21 @@
+.btn_cancel {
+  color: red;
+
+  &:hover {
+    color: rgb(194, 7, 7);
+  }
+}
+
+.btns {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.address_btn {
+  transition: color 0.2s;
+  &:hover {
+    color: var(--attention-color);
+  }
+}

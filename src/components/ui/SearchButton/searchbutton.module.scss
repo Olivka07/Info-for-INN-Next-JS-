@@ -1,0 +1,13 @@
+.btn {
+  border-left: 3px solid var(--primary-color);
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  height: var(--font-size-m);
+}
