@@ -1,6 +1,6 @@
 # Веб-приложения для отображения информации об организации по ИНН.
 
-## Используемые технологии: NestJS, React, SCSS, TypeScript
+## Используемые технологии: NextJS, React, SCSS, TypeScript
 
 ## Посмотреть здесь: https://info-for-inn-next-js-3wk5.vercel.app/
 
