@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, Suspense } from "react";
 import { Metadata } from "next";
 import { getInfo } from "./api";
 import { InfoWidget } from "@/components/ui/InfoWidget/InfoWidget";
@@ -30,7 +30,7 @@ const Page: FC<AboutPageProps> = async ({ params: { id } }) => {
   try {
     const data = await getInfo(id);
     return (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <div className='center_horizontal'>
           <WidgetSearch />
         </div>
@@ -39,7 +39,7 @@ const Page: FC<AboutPageProps> = async ({ params: { id } }) => {
         )) || (
           <p className='center_text'>{`Организации с ИНН ${id} не найдено`}</p>
         )}
-      </>
+      </Suspense>
     );
   } catch (e) {
     throw e;

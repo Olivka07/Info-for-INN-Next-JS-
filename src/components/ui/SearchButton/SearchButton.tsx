@@ -5,24 +5,27 @@ import { Button, ThemeButton } from "../Button/Button";
 import classes from "./searchbutton.module.scss";
 import { classNames } from "@/utils/helpers/classNames";
 import { useTheme } from "@/utils/hooks/useTheme";
+import Link from "next/link";
 
 interface SearchButtonProps {
-  searchHandler: () => void;
+  searchValue: string;
 }
 export const SearchButton: FC<SearchButtonProps> = (props) => {
   const { theme } = useTheme();
-  const { searchHandler } = props;
+  const { searchValue } = props;
   return (
     <Button
-      onClick={searchHandler}
+      onClick={() => {}}
       className={classNames(classes.btn)}
       theme={ThemeButton.CLEAR}
     >
-      <img
-        className={classNames(classes.img)}
-        src={`/glass_${theme}.svg`}
-        alt='glass'
-      />
+      <Link href={`/info/${searchValue}`}>
+        <img
+          className={classNames(classes.img)}
+          src={`/glass_${theme}.svg`}
+          alt='glass'
+        />
+      </Link>
     </Button>
   );
 };
