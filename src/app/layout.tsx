@@ -17,7 +17,7 @@ export default function RootLayout({
       <head>
         <meta
           name='author'
-          content='Alexander Pituishov: uchenik.ikt@yandex.ru'
+          content='Alexander Pirushov: uchenik.ikt@yandex.ru'
         />
       </head>
       <body>
